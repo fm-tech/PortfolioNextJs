@@ -1,68 +1,21 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
-import axios from 'axios';
 
-import SuperComponent from '../components/SuperComponent';
+import {Button, Container} from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+class Index extends React.Component {
 
-class Index extends SuperComponent {
 
-    static async getInitialProps() {
-        let userData = [];
-        
-        try{
-            const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-             userData = response.data;
-            console.log(userData);
-         
-        } catch(err) {
-            console.err(err)
-        }
-    
-        return{initalData: [1,2,3,4], userData: userData};
-    }
-
-    constructor() {
-        super();
-
-        this.state = {
-            title: 'I am Index Page'
-        }
-        // this.updateTitle = this.updateTitle.bind(this);
-    }
-
-    componentDidMount(){
-        console.log('componentDidMount');
-
-    }
-    
-    componentDidUpdate() {
-        console.log('componentDidUpdate');
-    }
-
-    componentWillMount() {  
-        console.log('componentWillMount');
-    }
-
-    updateTitle = () => {
-
-        this.setState({title: ' I am update Index page'});
-    }
     
     render() {
-        debugger;
-        const {title} = this.state;
-        const {userData, initalData} = this.props;
-
+    
         return(
            <BaseLayout>
-           <div>
-               <h1>I am the page index</h1>     
-                <h2> {title}</h2>
-                <p> {userData.title}</p>
-                <button onClick={this.updateTitle}> Change Title </button>
-            </div> 
+            <Container>
+                <Button color="danger">Danger Sudo</Button>
+            </Container>
            </BaseLayout>
         )
 

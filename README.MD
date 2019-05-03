@@ -3,4 +3,4 @@ This is a project I am working on to showcase what I can do with a bit of free t
 Author: Francisco Miranda
 Website: https://franciscoit.com
 
-Made with love with ReactJS, and NextJS
+Made with love with ReactJS, and NextJSgit
