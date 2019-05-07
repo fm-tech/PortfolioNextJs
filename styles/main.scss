@@ -1,10 +1,19 @@
 @import './shared/fonts';
+@import './shared/index';
 
 html, body {
     font-family: 'Lato' !important;
+    height:100%;
+    width:100%;
 }
 
 
 .CustomClass {
     color: red;
 } 
+
+.self-typed {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
