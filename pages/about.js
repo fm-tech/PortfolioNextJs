@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BaseLayout from '../components/layouts/BaseLayout';
+import BasePage from '../components/BasePage';
 
 
 class About extends React.Component {
@@ -9,10 +10,12 @@ class About extends React.Component {
        
         return(
         <BaseLayout>
-        <div>
+        <BasePage>
+            <div>
             <h1>I am the about </h1>     
              
-         </div>
+            </div>
+        </BasePage>
         </BaseLayout>
         )
 
