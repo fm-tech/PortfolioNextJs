@@ -1,4 +1,4 @@
-import {container} from 'reactstrap';
+import {Container} from 'reactstrap';
 
 const BasePage = (props) => {
     return(
@@ -10,3 +10,5 @@ const BasePage = (props) => {
 
     )
 }
+
+export default BasePage;
