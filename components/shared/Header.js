@@ -10,6 +10,8 @@ import {
     NavItem,
 } from 'reactstrap'; 
 
+import auth0 from '../../services/auth0'
+
 const MyNavLink = (props) =>  {
     const { route, title} = props;
 
@@ -19,8 +21,18 @@ const MyNavLink = (props) =>  {
         </Link>
     )
 }
+const Login = () => {
+    return(
+        <span onClick={auth0.login} className="nav-link port-navbar-link clickable">Log in</span>
+    )
+}
+const Logout = () => {
+    return(
+        <span className="nav-link port-navbar-link clickable">Log Out</span>
+    )
+}
 
-class Header extends React.Component {
+export default class Header extends React.Component {
     constructor(props) {
         super(props);
     
@@ -55,6 +67,12 @@ class Header extends React.Component {
                             </NavItem> 
                             <NavItem className="port-navbar-item">
                                 <MyNavLink route="https://github.com/fm-tech" title="Git" />
+                            </NavItem>  
+                            <NavItem className="port-navbar-item">
+                                <Login />
+                            </NavItem>  
+                            <NavItem className="port-navbar-item">
+                                <Logout />
                             </NavItem>                 
                         </Nav>
                     </Collapse>
@@ -64,10 +82,9 @@ class Header extends React.Component {
     }
 }
 
-export default Header; 
-            
+
            
         
-
+ 
 
 
