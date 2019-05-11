@@ -8,7 +8,7 @@ class Blogs extends React.Component {
         return (
             <BaseLayout>
             <div>
-                <h1>I am a Blog page </h1>
+                <h1> Authenticating... </h1>
             </div>
             </BaseLayout>
         )
@@ -16,4 +16,4 @@ class Blogs extends React.Component {
 }
 
 
-export default Blogs
+export default Callback
