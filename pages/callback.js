@@ -3,13 +3,15 @@ import BaseLayout from '../components/layouts/BaseLayout';
 import BasePage from '../components/BasePage';
 
 
-class Blogs extends React.Component {
+class Callback extends React.Component {
     render() {
         return (
             <BaseLayout>
-            <div>
+                <BasePage>
+                <div>
                 <h1> Authenticating... </h1>
             </div>
+                </BasePage>
             </BaseLayout>
         )
     }

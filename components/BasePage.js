@@ -1,11 +1,18 @@
 import {Container} from 'reactstrap';
 
+
 const BasePage = (props) => {
+
+    const { className } = props;
+
     return(
-        <div className="base-page">
-            <Container>
-                {props.children}
-            </Container>
+        <div className={'base-page ${className}'}>
+ 
+                <Container> 
+                    {props.children}
+                </Container> 
+         
+
         </div>
 
     )

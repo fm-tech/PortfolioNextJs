@@ -42,12 +42,12 @@ class Portfolios extends React.Component {
     const {PPosts} = this.props;
         return (
             <BaseLayout>
-            <BasePage>
-            <div>
-                <h1>I am a Portfolios Page</h1>
-                <ul>{this.renderPosts(PPosts)}</ul>
-            </div>          
-            </BasePage>
+                <BasePage>
+                <div>
+                    <h1>I am a Portfolios Page</h1>
+                    <ul>{this.renderPosts(PPosts)}</ul>
+                </div>          
+                </BasePage>
             </BaseLayout>
         )
     }

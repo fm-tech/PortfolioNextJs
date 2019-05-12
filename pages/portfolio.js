@@ -30,7 +30,7 @@ class Portfolio extends React.Component {
         const {portfolio} = this.props;
 
         return (
-            <BaseLayout>
+            
             <BasePage>
             <div>
                 <h1>{ portfolio.title}</h1>
@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
                 <p>{ portfolio.id}</p>
             </div>
             </BasePage>
-            </BaseLayout>
+          
         )
     }
 }
