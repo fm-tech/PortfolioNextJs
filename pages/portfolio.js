@@ -30,14 +30,16 @@ class Portfolio extends React.Component {
         const {portfolio} = this.props;
 
         return (
-            
+            <BaseLayout {...this.props.auth}>
             <BasePage>
             <div>
                 <h1>{ portfolio.title}</h1>
                 <p>{ portfolio.body}</p>
                 <p>{ portfolio.id}</p>
             </div>
-            </BasePage>
+            </BasePage> 
+            </BaseLayout>
+           
           
         )
     }
