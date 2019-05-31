@@ -9,7 +9,7 @@ class About extends React.Component {
     render() {
        
         return(
-        <BaseLayout>
+        <BaseLayout {...this.props.auth}>
         <BasePage>
             <div>
             <h1>I am the about </h1>     

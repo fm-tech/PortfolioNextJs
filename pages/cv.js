@@ -5,7 +5,7 @@ class Cv extends React.Component {
 
     render() {
         return(
-          <BaseLayout>
+          <BaseLayout {...this.props.auth}>
           <div>
             <h1>I am the CV PAge </h1>    
         
