@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../shared/Header';
+import Footer from '../shared/Footer';
 
 const BaseLayout = (props) => {
     const  { className, children, isAuthenticated, user } = props;
@@ -11,6 +12,7 @@ const BaseLayout = (props) => {
                     {children}
                 </div>
             </main>
+            
         </div>
         
     )

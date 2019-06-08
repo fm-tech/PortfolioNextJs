@@ -1,6 +1,11 @@
 @import './shared/fonts';
 @import './shared/index';
 @import './shared/header';
+@import './shared/portfolio';
+
+
+$black-base1: #403F3E; 
+$black-base2: #807E7D;
 
 html, body {
     font-family: 'Lato' !important;
@@ -17,7 +22,7 @@ html, body {
 } 
 
 .self-typed {
-    color: white;
+    color: $black-base1;
     font-size: 2em;
     letter-spacing: 2px;
 }
@@ -25,3 +30,4 @@ html, body {
 .base-page {
     padding-top: 150px ; 
 }
+

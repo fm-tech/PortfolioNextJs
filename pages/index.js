@@ -17,57 +17,52 @@ class Index extends React.Component {
             <BaseLayout className="cover" {...this.props.auth}>
             <div className="main-section">
               <div className="background-image">
-                <img src="\static\img\background-index.png.png" />
               </div>
           
               <Container>
                 <Row>
-                  <Col md="6">
-                    <div className="hero-section">
-                      <div className={`flipper`}>
-                        <div className="back">
-                          <div className="hero-section-content">
-                            <h2> Full Stack Web Developer </h2>
-                            <div className="hero-section-content-intro">
-                              Have a look at my portfolio and job history.
-                            </div>
-                          </div>
-                          <img className="image" src="/static/img/section-1.png.png"/>
-                          <div className="shadow-custom">
-                            <div className="shadow-inner"> </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </Col>
-                  <Col md="6" className="hero-welcome-wrapper">
-                    <div className="hero-welcome-text">
+                  <Col md="8" className="hero-welcome-wrapper">
+                  <div className="hero-welcome-text">
                       <h1>
                         { isAuthenticated && <strong>{user.name} </strong> }
                         Welcome to the portfolio website of Filip Jerga.
                         Get informed, collaborate and discover projects I was working on through the years!
                       </h1>
                     </div>
-                    <Typed
-                          loop
-                          typeSpeed={50}
-                          backSpeed={70}
-                          strings={this.roles}
-                          backDelay={100}
-                          smartBackspace
-                          shuffle={false}
-                          loopCount={0}
-                          showCursor
-                          className="self-typed"
-                          cursorChar="|"
-                        />
+                   
                     <div className="hero-welcome-bio">
                       <h1>
                         Let's take a look on my work.
                       </h1>
-                    </div>
+                    </div>  
+                  </Col>
+                  <Col md="4">
+                    <div className="hero-section">
+                        <div className={`flipper`}>
+                          <div className="back">
+                            <img className="image" src="https://i.imgur.com/wPY4twO.jpg"/>
+                            <div className="shadow-custom">
+                              <div className="shadow-inner"> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                   </Col>
                 </Row>
+                    {/* Seperate the sections  */}
+                    <span className="lineBreak"></span>
+                  
+                     <Row className="mainPage">
+                       
+                        <Col md="4">
+                          <img className="image" src="https://i.imgur.com/1U8I0mi.jpg" />
+                        </Col>
+                        <Col md="8">
+                          <p><div id="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis expedita quas ipsum. Velit repudiandae molestiae ipsam a aut qui eligendi accusantium, enim sequi cum architecto magni veniam perspiciatis dolorum.</div></p>
+                        </Col>
+                     </Row>
+               
+
               </Container>
             </div>
           </BaseLayout>
