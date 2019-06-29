@@ -2,20 +2,34 @@
 @import './shared/index';
 @import './shared/header';
 @import './shared/portfolio';
+@import './shared/footer';
 
 
-$black-base1: #403F3E; 
+$black-base1: #303030; 
 $black-base2: #807E7D;
+$white-base1: #f2f2f2;
+
 
 html, body {
     font-family: 'Lato' !important;
     height:100%;
     width:100%;
+    background-color: $white-base1;
+}
+p {
+    font-size: 1.2em;
+    font-family: 'Lato' !important;
+   
 }
 
 .clickable {
     cursor: pointer;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
 
 .CustomClass {
     color: red;

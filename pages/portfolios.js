@@ -46,6 +46,7 @@ class Portfolios extends React.Component {
                 <div>
                     <h1>I am a Portfolios Page</h1>
                     <ul>{this.renderPosts(PPosts)}</ul>
+                  
                 </div>          
                 </BasePage>
             </BaseLayout>

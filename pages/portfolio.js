@@ -35,7 +35,8 @@ class Portfolio extends React.Component {
             <div>
                 <h1>{ portfolio.title}</h1>
                 <p>{ portfolio.body}</p>
-                <p>{ portfolio.id}</p>
+                <img src="https://i.imgur.com/SILkg83.jpg" className="responsive blogImage" />
+
             </div>
             </BasePage> 
             </BaseLayout>

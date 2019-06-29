@@ -1,6 +1,7 @@
 // index
 $black-base1: #403F3E; 
 $black-base2: #807E7D;
+$white-base1: #f2f2f2;
 
 .cover {
     background-image: linear-gradient(45deg,#f2f2f2 0%,#FFFCFA 100%);
@@ -121,4 +122,10 @@ $black-base2: #807E7D;
   
 .mainPage {
   margin-top: 5.5em;
+}
+
+
+.workedOn {
+  background-color: $white-base1;
+  color: $black-base2;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
-import {Button, Container, Row, Col} from 'reactstrap';
+import {Button, Container, Row, Col, Jumbotron} from 'reactstrap';
 
 import Typed from 'react-typed';
 
@@ -61,8 +61,24 @@ class Index extends React.Component {
                           <p><div id="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo facilis expedita quas ipsum. Velit repudiandae molestiae ipsam a aut qui eligendi accusantium, enim sequi cum architecto magni veniam perspiciatis dolorum.</div></p>
                         </Col>
                      </Row>
-               
+               {/* This is reserved for cool things I have done */}
+                    <Jumbotron className="mainPage workedOn">
+                      <h1>This is a pretty cool section</h1>
 
+                    </Jumbotron>
+              {/* Skills  */}
+                    <Row>
+                      <Col md="8">
+                        <div>
+                          <h1>I'm pretty good at</h1>
+                          <ul>
+                            <li>About</li>
+                          </ul>
+                        </div>
+                      </Col>
+                      <Col md="4">
+                      </Col>
+                    </Row>
               </Container>
             </div>
           </BaseLayout>

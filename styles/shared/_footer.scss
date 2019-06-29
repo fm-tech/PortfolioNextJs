@@ -1,0 +1,30 @@
+// Footer 
+$gray1: #737373;
+$white1: #FFFFFF;
+
+
+.footerWrap {
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    color: $gray1;
+    margin-top: 5em;
+
+
+    p {
+        align-self: flex-end;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    .copyrights {
+        margin-top: auto;
+        p {
+            font-size: 0.9em;
+            color: $gray1;
+        }
+    }
+}
+
+
